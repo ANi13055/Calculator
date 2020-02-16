@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+<head>
+ <title>JS-Calculator</title>
+ <link rel="stylesheet" href="index.css">
+ <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <form class="form" name="form">
+    		<input type="text" class="textbox" name="textbox">
+    </form>
+    <table>
+      <tr>
+        <td><input class="btn clear-btn" type="button" value="AC" onclick="clean()" onmousedown="bleep.play()">
+        </input>
+        </td>
+        <td><input class="btn clear-btn" type="button" value="<<" onclick="back()" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn" type="button" value="." onclick="insert('.')" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn" type="button" value="/" onclick="insert('/')" onmousedown="beep.play()">
+        </input>
+        </td>
+      </tr>
+      <tr>
+        <td><input class="btn button" type="button" value="7" onclick="insert(7)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn button" type="button" value="8" onclick="insert(8)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn button" type="button" value="9" onclick="insert(9)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn" type="button" value="*" onclick="insert('*')" onmousedown="beep.play()">
+        </input>
+        </td>
+      </tr>
+      <tr>
+        <td><input class="btn button" type="button" value="4" onclick="insert(4)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn button" type="button" value="5" onclick="insert(5)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn button" type="button" value="6" onclick="insert(6)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn" type="button" value="-" onclick="insert('-')" onmousedown="beep.play()">
+        </input>
+        </td>
+      </tr>
+      <tr>
+        <td><input class="btn button" type="button" value="1" onclick="insert(1)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn button" type="button" value="2" onclick="insert(2)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn button" type="button" value="3" onclick="insert(3)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td rowspan="2"><input style="height: 102px;" class="btn" type="button" value="+" onclick="insert('+')" onmousedown="beep.play()">
+        </input>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><input style="width: 122px;" class="btn button" type="button" value="0" onclick="insert(0)" onmousedown="beep.play()">
+        </input>
+        </td>
+        <td><input class="btn equal-btn" type="button" value="=" onclick="equal()" onmousedown="beep.play()">
+        </input>
+        </td>
+      </tr>
+    </table>
+</body>
+</html>
